@@ -22,15 +22,9 @@ export default {
         };
     },
 
-    mounted() {
-        this.fetchPosts();
-    },
-
-    methods: {
-        async fetchPosts() {
-            const res = await rest.get('/posts');
-            this.posts = res.data;
-        },
+    async mounted() {
+        const res = await rest.get('/posts');
+        this.posts = res.data;
     },
 }
 </script>

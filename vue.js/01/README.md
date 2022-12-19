@@ -16,6 +16,14 @@ vue create mvvm-01
 * Vue.js 3.x 버전 선택
 * Router 선택
 
+## axios 설치 setup
+
+REST API 호출을 위해서 axios를 설치합니다.
+
+```
+npm install axios
+```
+
 ## Compiles and hot-reloads for development
 
 ```
@@ -79,15 +87,9 @@ export default {
         };
     },
 
-    mounted() {
-        this.fetchPosts();
-    },
-
-    methods: {
-        async fetchPosts() {
-            const res = await rest.get('/posts');
-            this.posts = res.data;
-        },
+    async mounted() {
+        const res = await rest.get('/posts');
+        this.posts = res.data;
     },
 }
 </script>
