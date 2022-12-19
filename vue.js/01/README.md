@@ -16,20 +16,10 @@ vue create mvvm-01
 * Vue.js 3.x 버전 선택
 * Router 선택
 
-
-## Project setup
-
-```
-cd mvvm-01
-npm install pinia
-npm install axios
-```
-* 상태 관리를 위해서 pinia를 설치합니다.
-* REST API 호출을 위해서 axios를 설치합니다.
-
 ## Compiles and hot-reloads for development
 
 ```
+cd mvvm-01
 npm run serve
 ```
 

@@ -2,6 +2,14 @@
 
 이 예제는 "episode 1"의 소스에 자료에 이어서 진행됩니다.
 
+## axios 설치 setup
+
+REST API 호출을 위해서 axios를 설치합니다.
+
+```
+npm install axios
+```
+
 ## @/components/ListComponent.vue
 
 ``` html
