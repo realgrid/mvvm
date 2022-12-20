@@ -1,8 +1,8 @@
 # MVVM for Vue.js episode 1
 
-Vue.js 예제를 통해서 MVVM 활용이 어떻게 도움이 되는 지 설명하는 과정입니다.
-조금씩 늘어나는 요구사항을 처리하면서 MVVM 아키텍쳐의 설명을 이어나갈 예정입니다.
-Vue.js의 기본적인 내용을 이해하시는 분들은 이 번 영상은 건너 뛰어도 될 듯 합니다.
+Vue.js 예제를 통해서 MVVM 활용이 어떻게 도움이 되는 지 설명하는 과정입니다. 
+조금씩 늘어나는 요구사항을 처리하면서 MVVM 아키텍처의 설명을 이어 나갈 예정입니다. 
+Vue.js의 기본적인 내용을 이해하시는 분들은 이 번 영상은 건너 뛰어도 될 듯합니다.
 
 Vue.js가 익숙하지 않으신 분들은 아래 영상을 먼저 학습해보시길 권해드립니다.
 * [Vue.js 게시판 프로젝트](https://www.youtube.com/watch?v=oV-vBrnkUyY&list=PLdJpJI2SrqElEw5CmcVlJpebyJAbd5YDE)
