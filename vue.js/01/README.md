@@ -1,5 +1,11 @@
 # MVVM for Vue.js episode 1
 
+## Node.js 설치
+
+Node.js 설치를 하시지 않은 분들만 설치하시면 됩니다.
+
+[https://nodejs.org/en/](https://nodejs.org/en/)
+
 ## Vue CLI 설치
 
 Vue CLI가 설치하지 않은 경우에는 아래와 같이 설치를 합니다.
