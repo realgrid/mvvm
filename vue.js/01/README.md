@@ -27,13 +27,13 @@ vue create mvvm-01
 REST API 호출을 위해서 axios를 설치합니다.
 
 ```
+cd mvvm-01
 npm install axios
 ```
 
 ## Compiles and hot-reloads for development
 
 ```
-cd mvvm-01
 npm run serve
 ```
 
