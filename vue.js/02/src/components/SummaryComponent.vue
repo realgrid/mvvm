@@ -1,11 +1,16 @@
 <template>
     <div>
-       Record count: {{ posts.length }}
+       Record count: {{ postStore.posts.length }}
     </div>
 </template>
 
 <script>
+import { usePostStore } from '@/store/post'
+
 export default {
-    props: ["posts"],
+    setup() {
+        const postStore = usePostStore();
+        return { postStore }
+    },
 }
 </script>

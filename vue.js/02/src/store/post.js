@@ -1,24 +1,5 @@
-# MVVM for Vue.js episode 4
-
-이 예제는 "episode 3"의 소스에 자료에 이어서 진행됩니다.
-
-## @/mdoels/post.js
-
-``` js
-import rest from '@/globlas/rest';
-
-export default {
-    getPosts() {
-        return rest.get('/posts');
-    },
-}
-```
-
-## @/store/post.js
-
-``` js
 import { defineStore } from "pinia";
-import post from "@/models/post";
+import rest from '@/globlas/rest';
 
 export const usePostStore = defineStore("post", {
     id: "post",
@@ -34,7 +15,7 @@ export const usePostStore = defineStore("post", {
 
         async fetchPosts() {
             try {
-                const res = await post.getPosts();
+                const res = await rest.get('/posts');
                 this.posts = res.data;
             } catch (error) {
                 this.posts = [];
@@ -42,4 +23,3 @@ export const usePostStore = defineStore("post", {
         }
     },
 });
-```

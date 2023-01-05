@@ -5,7 +5,7 @@
                 <th>id</th>
                 <th>Title</th>
             </tr>
-            <tr v-for="post in posts" :key="post.id">
+            <tr v-for="post in postStore.posts" :key="post.id">
                 <td>{{ post.id }}</td>
                 <td>{{ post.title }}</td>
             </tr>
@@ -14,8 +14,13 @@
 </template>
 
 <script>
+import { usePostStore } from '@/store/post'
+
 export default {
-    props: ["posts"],
+    setup() {
+        const postStore = usePostStore();
+        return { postStore }
+    },
 }
 </script>
 

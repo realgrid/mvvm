@@ -2,21 +2,21 @@
     <div>
         <h1>Posts</h1>
 
-        <button @click="posts=[]">Clear</button>
+        <button @click="postStore.clear()">Clear</button>
         <br><br>
 
-        <ListComponent :posts="posts" style="height: 200px; overflow: auto;" />
+        <ListComponent style="height: 200px; overflow: auto;" />
         <br>
 
-        <TableComponent :posts="posts" style="height: 200px; overflow: auto;" />
+        <TableComponent style="height: 200px; overflow: auto;" />
         <br>
 
-        <SummaryComponent :posts="posts" />
+        <SummaryComponent />
     </div>
 </template>
 
 <script>
-import rest from '@/globlas/rest';
+import { usePostStore } from '@/store/post'
 import ListComponent from '@/components/ListComponent';
 import TableComponent from '@/components/TableComponent';
 import SummaryComponent from '@/components/SummaryComponent';
@@ -26,21 +26,13 @@ export default {
         ListComponent, TableComponent, SummaryComponent,
     },
 
-    data() {
-        return {
-            posts: [],
-        };
+    setup() {
+        const postStore = usePostStore();
+        return { postStore }
     },
 
     mounted() {
-        this.fetchPosts();
-    },
-
-    methods: {
-        async fetchPosts() {
-            const res = await rest.get('/posts');
-            this.posts = res.data;
-        },
+        this.postStore.fetchPosts();
     },
 }
 </script>

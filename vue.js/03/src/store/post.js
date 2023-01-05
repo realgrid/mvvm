@@ -1,5 +1,5 @@
 import { defineStore } from "pinia";
-import rest from '@/globlas/rest';
+import post from "@/models/post";
 
 export const usePostStore = defineStore("post", {
     id: "post",
@@ -15,7 +15,7 @@ export const usePostStore = defineStore("post", {
 
         async fetchPosts() {
             try {
-                const res = await rest.get('/posts');
+                const res = await post.getPosts();
                 this.posts = res.data;
             } catch (error) {
                 this.posts = [];
