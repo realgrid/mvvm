@@ -5,10 +5,10 @@
         <button @click="posts=[]">Clear</button>
         <br><br>
 
-        <ListComponent :posts="posts" style="height: 120px; overflow: auto;" />
+        <ListComponent :posts="posts" style="height: 200px; overflow: auto;" />
         <br>
 
-        <TableComponent :posts="posts" style="height: 120px; overflow: auto;" />
+        <TableComponent :posts="posts" style="height: 200px; overflow: auto;" />
         <br>
 
         <SummaryComponent :posts="posts" />

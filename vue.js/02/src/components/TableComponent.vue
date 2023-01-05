@@ -18,3 +18,16 @@ export default {
     props: ["posts"],
 }
 </script>
+
+<style>
+table {
+    width: 100%;
+    border: 1px solid #444444;
+    border-collapse: collapse;
+}
+th,
+td {
+    border: 1px solid #444444;
+    padding: 10px;
+}
+</style>

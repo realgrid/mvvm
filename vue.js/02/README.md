@@ -45,6 +45,19 @@ export default {
     props: ["posts"],
 }
 </script>
+
+<style>
+table {
+    width: 100%;
+    border: 1px solid #444444;
+    border-collapse: collapse;
+}
+th,
+td {
+    border: 1px solid #444444;
+    padding: 10px;
+}
+</style>
 ```
 
 ## @/components/SummaryComponent.vue
@@ -73,10 +86,10 @@ export default {
         <button @click="posts=[]">Clear</button>
         <br><br>
 
-        <ListComponent :posts="posts" style="height: 120px; overflow: auto;" />
+        <ListComponent :posts="posts" style="height: 200px; overflow: auto;" />
         <br>
 
-        <TableComponent :posts="posts" style="height: 120px; overflow: auto;" />
+        <TableComponent :posts="posts" style="height: 200px; overflow: auto;" />
         <br>
 
         <SummaryComponent :posts="posts" />
