@@ -2,7 +2,7 @@
 
 이 예제는 "episode 1"의 소스에 자료에 이어서 진행됩니다.
 
-## axios 설치 setup
+## pinia 설
 
 상태 관리를 위해서 pinia를 설치합니다.
 
