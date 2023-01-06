@@ -2,7 +2,7 @@
 
 이 예제는 "episode 2"의 소스에 자료에 이어서 진행됩니다.
 
-## @/mdoels/post.js
+## @/models/post.js
 
 ``` js
 import rest from '@/globlas/rest';
