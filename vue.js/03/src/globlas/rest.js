@@ -16,7 +16,7 @@ instance.interceptors.response.use(
     },
 
     function (error) {
-        // TODO 후처리 (실패)
+        // TODO 공통 오류 처리
         return Promise.reject(error);
     }
 );
