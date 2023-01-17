@@ -13,7 +13,6 @@ export default {
             const res = await rest.get('/posts');
             return Promise.resolve(res);
         } catch (error) {
-            // TODO 공통 에러 처리
             console.log(error);
         }
 
