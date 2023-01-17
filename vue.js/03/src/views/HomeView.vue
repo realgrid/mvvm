@@ -5,10 +5,10 @@
         <button @click="postStore.clear()">Clear</button>
         <br><br>
 
-        <ListComponent style="height: 120px; overflow: auto;" />
+        <ListComponent style="height: 200px; overflow: auto;" />
         <br>
 
-        <TableComponent style="height: 120px; overflow: auto;" />
+        <TableComponent style="height: 200px; overflow: auto;" />
         <br>
 
         <SummaryComponent />

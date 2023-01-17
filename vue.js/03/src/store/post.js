@@ -14,12 +14,8 @@ export const usePostStore = defineStore("post", {
         },
 
         async fetchPosts() {
-            try {
-                const res = await post.getPosts();
-                this.posts = res.data;
-            } catch (error) {
-                this.posts = [];
-            }
+            const res = await post.getPosts();
+            this.posts = res.data;
         }
     },
 });
