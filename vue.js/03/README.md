@@ -13,6 +13,7 @@ export default {
             const res = await rest.get('/posts');
             return Promise.resolve(res);
         } catch (error) {
+            // 공통 오류처리는 rest 모듈에서 한 번에 처리한다.
             console.log(error);
         }
 
