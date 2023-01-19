@@ -7,7 +7,7 @@
             <div class="right">
                 <input type="text" v-model="signup.email" style="width: 100%;" /><br />
             </div>
-            <p class="error-text">{{ errorEmail }}</p>
+            <p class="error-text">{{ signup.errorEmail }}</p>
         </div>
 
         <div class="row">
@@ -17,7 +17,7 @@
             <div class="right">
                 <input type="password" v-model="signup.password" style="width: 100%;" /><br />
             </div>
-            <p class="error-text">{{ errorPassword }}</p>
+            <p class="error-text">{{ signup.errorPassword }}</p>
         </div>
 
         <div class="row">
@@ -27,7 +27,7 @@
             <div class="right">
                 <input type="password" v-model="signup.passwordConfirm" style="width: 100%;" /><br />
             </div>
-            <p class="error-text">{{ errorPasswordConfirm }}</p>
+            <p class="error-text">{{ signup.errorPasswordConfirm }}</p>
         </div>
 
         <div class="row">
@@ -37,7 +37,6 @@
 </template>
 
 <script>
-import { mapState } from 'pinia';
 import { useSignupStore } from '@/store/signup';
 
 export default {
@@ -46,10 +45,6 @@ export default {
         return {
             signup: signup,
         }
-    },
-
-    computed: {
-        ...mapState(useSignupStore, ["errorEmail", "errorPassword", "errorPasswordConfirm"]),
     },
 }
 </script>
