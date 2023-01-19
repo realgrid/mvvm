@@ -5,8 +5,6 @@ import signup from "@/models/signup";
 export const useSignupStore = defineStore("signup",  {
     id: "signup",
 
-    errorMessageCertNum: "",
-
     state: () => ({
         email: "",
         password: "",
@@ -14,13 +12,6 @@ export const useSignupStore = defineStore("signup",  {
     }),
 
     getters: {
-        canSignup() {
-            return (this.email != "") &&
-                (this.errorEmail === "") &&
-                (this.errorPassword === "") &&
-                (this.errorPasswordConfirm === "");
-        },
-
         errorEmail() {
             if (this.email.length == 0) return "이메일을 입력해주세요.";
             if (!checkEmail(this.email)) return "이메일 형식이 잘못되었습니다.";
@@ -39,12 +30,18 @@ export const useSignupStore = defineStore("signup",  {
             if (this.passwordConfirm !== this.password) return "비밀번호가 일치하지 않습니다.";
             return "";
         },
+
+        canSignup() {
+            return (this.email != "") &&
+                (this.errorEmail === "") &&
+                (this.errorPassword === "") &&
+                (this.errorPasswordConfirm === "");
+        },
     },
 
     actions: {
         async submit() {
             const response = await signup.submit(this.$state);
-            console.log("signup.submit - response:", response);
 
             if (response.data.errorCode) {
                 alert(response.data.errorMessage);
