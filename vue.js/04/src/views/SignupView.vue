@@ -5,7 +5,7 @@
                 email
             </div>
             <div class="right">
-                <input type="text" v-model="signup.email" style="width: 100%;" /><br />
+                <input type="text" v-model="signup.email" style="width: 100%;" />
             </div>
             <p class="error-text">{{ signup.errorEmail }}</p>
         </div>
@@ -15,7 +15,7 @@
                 비번
             </div>
             <div class="right">
-                <input type="password" v-model="signup.password" style="width: 100%;" /><br />
+                <input type="password" v-model="signup.password" style="width: 100%;" />
             </div>
             <p class="error-text">{{ signup.errorPassword }}</p>
         </div>
@@ -25,7 +25,7 @@
                 비번확인
             </div>
             <div class="right">
-                <input type="password" v-model="signup.passwordConfirm" style="width: 100%;" /><br />
+                <input type="password" v-model="signup.passwordConfirm" style="width: 100%;" />
             </div>
             <p class="error-text">{{ signup.errorPasswordConfirm }}</p>
         </div>
