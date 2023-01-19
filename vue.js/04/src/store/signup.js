@@ -22,9 +22,8 @@ export const useSignupStore = defineStore("signup",  {
         },
 
         errorEmail() {
-            if (!checkEmail(this.email)) {
-                return "이메일 형식이 잘못되었습니다.";
-            }
+            if (this.email.length == 0) return "이메일을 입력해주세요.";
+            if (!checkEmail(this.email)) return "이메일 형식이 잘못되었습니다.";
             return "";
         },
 
