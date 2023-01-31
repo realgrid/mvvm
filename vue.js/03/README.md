@@ -1,4 +1,4 @@
-# MVVM for Vue.js episode 3
+# MVVM for Vue.js episode 3 - MVVVM 패턴으로의 전환
 
 이 예제는 "episode 2"의 소스에 자료에 이어서 진행됩니다.
 

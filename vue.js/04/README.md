@@ -1,4 +1,4 @@
-# MVVM for Vue.js episode 4
+# MVVM for Vue.js episode 4 - 회원가입
 
 ## @/views/SignupView.vue (레이아웃 설정)
 

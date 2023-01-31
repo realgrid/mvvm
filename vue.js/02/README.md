@@ -1,4 +1,4 @@
-# MVVM for Vue.js episode 2
+# MVVM for Vue.js episode 2 - 전역 상태 관리
 
 이 예제는 "episode 1"의 소스에 자료에 이어서 진행됩니다.
 
