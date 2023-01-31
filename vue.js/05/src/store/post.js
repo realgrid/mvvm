@@ -19,8 +19,8 @@ export const usePostStore = defineStore("post", {
             this.posts = res.data;
 
             // 게시판 읽기 권한이 없음을 가상 시나리오로 적용
-            const POST_READ_PERMISSIONS = 100;
-            if (res.errorCode === POST_READ_PERMISSIONS) {
+            const POST_READ_PERMISSION = 100;
+            if (res.errorCode === POST_READ_PERMISSION) {
                 alert(res.errorMessage);
                 router.push("/");
             }
